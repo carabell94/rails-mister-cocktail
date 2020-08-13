@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   # POST "cocktails" = CREATE
 
   resources :cocktails, only: [:index, :show, :new, :create]
+  resources :doses, only: [:new, :create, :destroy]
 end
