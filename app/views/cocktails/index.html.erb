@@ -1,11 +1,15 @@
-<h2>My Cocktails</h2>
+<div class="ml-3">
+  <h2>My Cocktails</h2>
+</div>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <%= link_to cocktail_path(cocktail) do %>
-      <li><%= cocktail.name %></li>
+  <ul>
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to cocktail_path(cocktail) do %>
+        <li><%= cocktail.name %></li>
+      <% end %>
     <% end %>
-  <% end %>
-</ul>
+  </ul>
 
-<%= link_to 'Create Cocktail', new_cocktail_path %>
+<div class="ml-3">
+  <%= link_to 'Create Cocktail', new_cocktail_path, class: 'btn btn-primary' %>
+</div>

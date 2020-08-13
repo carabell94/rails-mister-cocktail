@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   # GET "cocktails/new" = NEW
   # POST "cocktails" = CREATE
 
-  resources :cocktails, only: [:index, :show, :new, :create]
-  resources :doses, only: [:new, :create, :destroy]
+  resources :cocktails, only: [:index, :show, :new, :create] do
+    resources :doses, only: [:new, :create]
+  end
+  resources :doses, only: [:destroy]
 end
