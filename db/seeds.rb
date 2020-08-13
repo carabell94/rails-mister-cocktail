@@ -9,16 +9,16 @@ require 'open-uri'
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# Ingredient.create(name: "lemon")
-# Ingredient.create(name: "ice")
-# Ingredient.create(name: "mint leaves")
-# Ingredient.create(name: "vodka")
-# Ingredient.create(name: "rum")
-# Ingredient.create(name: "soda water")
-# Ingredient.create(name: "tequila")
-# Ingredient.create(name: "orange juice")
-# Ingredient.create(name: "lime")
-# Ingredient.create(name: "sugar syrup")
+# Ingredient.create(name: 'lemon')
+# Ingredient.create(name: 'ice')
+# Ingredient.create(name: 'mint leaves')
+# Ingredient.create(name: 'vodka')
+# Ingredient.create(name: 'rum')
+# Ingredient.create(name: 'soda water')
+# Ingredient.create(name: 'tequila')
+# Ingredient.create(name: 'orange juice')
+# Ingredient.create(name: 'lime')
+# Ingredient.create(name: 'sugar syrup')
 
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 ingredients_url = open(url).read
