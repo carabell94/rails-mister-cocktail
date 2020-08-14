@@ -1,15 +1,21 @@
-<div class="ml-3">
-  <h2>Cocktail Time!!</h2>
-</div>
+<div class='black-background'>
+  <div id="banner">
+    <h2>Cocktail Time!</h2>
+    <p>Ready to get started?</p>
+     <%= link_to 'Create Cocktail', new_cocktail_path, class: 'btn btn-light' %>
+  </div>
 
-  <ul>
-    <% @cocktails.each do |cocktail| %>
-      <%= link_to cocktail_path(cocktail) do %>
-        <li><%= cocktail.name %></li>
+
+    <ul class='card-grid'>
+      <% @cocktails.each do |cocktail| %>
+        <%= link_to cocktail_path(cocktail) do %>
+      <div class="card mb-4 ml-2 mr-2">
+          <img src="../../images/cocktail.jpg" alt="cocktail">
+          <li class='cocktail-name text-center'><%= cocktail.name %></li>
+      </div>
+        <% end %>
       <% end %>
-    <% end %>
-  </ul>
-
-<div class="ml-3">
-  <%= link_to 'Create Cocktail', new_cocktail_path, class: 'btn btn-primary' %>
+    </ul>
 </div>
+
+

@@ -9,10 +9,20 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Marck+Script&family=Sriracha&display=swap" rel="stylesheet">  <body>
+    <div class='min-height'>
+      <%= yield %>
+    </div>
 
-  </head>
-
-  <body>
-    <%= yield %>
+      <!-- Footer -->
+    <div id="footer">
+      <p>© Cara Bell | 14.08.20 </p>
+      <div class="jc">
+        <a href="https://www.instagram.com/carabellini/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/carabell"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/carabell94"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
   </body>
 </html>

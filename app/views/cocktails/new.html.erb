@@ -1,8 +1,12 @@
-<h1>Create New Cocktail</h1>
+ <div class="text-center form-container">
+  <h1>Create New Cocktail</h1>
 
-<%= simple_form_for(@cocktail) do |f| %>
-  <%= f.input :name %>
-  <%= f.submit %>
-<% end %>
+  <div class='form-group'>
+    <%= simple_form_for(@cocktail) do |f| %>
+      <%= f.input :name, class: 'input', label: 'Enter the name of your cocktail below' %>
+      <%= f.submit class: 'btn btn-light' %>
+    <% end %>
+  </div>
 
-<%= link_to 'Back', cocktails_path, class: 'btn btn-primary' %>
+  <%= link_to 'Back', cocktails_path, class: 'btn btn-light back' %>
+</div>

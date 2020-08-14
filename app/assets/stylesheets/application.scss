@@ -11,7 +11,11 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "components/footer";
+@import "pages/new-cocktail";
+@import "pages/show";
 
 li {
   list-style-type: none;
 }
+
