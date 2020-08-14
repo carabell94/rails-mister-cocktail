@@ -40,17 +40,13 @@
 .card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 32px;
 }
 
 .card {
   box-shadow: 0 0 8px;
-  padding: 16px;
+  padding: 40px;
   background-color: black;
-
-  li {
-  font-size: 16px;
-  font-style: italic;
-  }
 
   img {
     align-items: center;
@@ -61,6 +57,8 @@
    font-family: 'arvo', serif;
    background-color: black;
    color: white;
+   font-size: 16px;
+  font-style: italic;
   }
 }
 
