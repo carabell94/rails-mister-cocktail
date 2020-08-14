@@ -18,7 +18,13 @@ require 'open-uri'
 # Ingredient.create(name: 'tequila')
 # Ingredient.create(name: 'orange juice')
 # Ingredient.create(name: 'lime')
-# Ingredient.create(name: 'sugar syrup')
+Ingredient.create(name: 'Sugar Syrup')
+Ingredient.create(name: 'White Rum')
+Ingredient.create(name: 'Ice')
+Ingredient.create(name: 'Strawberries')
+Ingredient.create(name: 'Mint Leaves')
+Ingredient.create(name: 'Coconut Cream')
+Ingredient.create(name: 'Jameson Irish Whiskey')
 
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 ingredients_url = open(url).read

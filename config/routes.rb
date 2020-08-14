@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # a user can create a new cocktail
   # GET "cocktails/new" = NEW
   # POST "cocktails" = CREATE
-
+  root to: 'cocktails#index'
   resources :cocktails, only: [:index, :show, :new, :create] do
     resources :doses, only: [:new, :create]
   end
