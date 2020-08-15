@@ -4,7 +4,12 @@
   <div class='form-group'>
     <%= simple_form_for(@cocktail) do |f| %>
       <%= f.input :name, class: 'input', label: 'Enter the name of your cocktail below' %>
-      <%= f.submit class: 'btn btn-light' %>
+      <div class='btn-center'>
+        <label class='choose-file-button btn-light'>
+          <%= f.input :photo, as: :file, label: 'Add Photo*' %>
+        </label>
+      </div>
+      <%= f.submit class: 'btn btn-light create-cocktail' %>
     <% end %>
   </div>
 
